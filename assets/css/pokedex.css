@@ -165,7 +165,7 @@
     padding: 1rem;
 }
 
-.pagination button {
+.pagination button{
     padding: .25rem .5rem;
     margin: .25rem 0;
     font-size: .625rem;
@@ -173,4 +173,24 @@
     background-color: #6c79db;
     border: none;
     border-radius: 1rem;
+}
+
+.pagination button:focus{
+    color:#7979ec;
+    background-color: #090f0f;
+}
+.pokemon button{
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #db6cdb;
+    border: 50px;
+    border-radius: 2rem;
+    cursor:pointer;  
+}
+
+.escolhe:focus{
+    color:#7979ec;
+    background-color: #090f0f;
 }

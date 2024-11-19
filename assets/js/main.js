@@ -10,7 +10,7 @@ console.log("sucesso!!!!!")
 const listapokems = document.getElementById("listadePokemons")
 const loadMoreButton = document.getElementById('loadMoreButton')
 
-const maxRecords = 14 //151
+const maxRecords = 25 //151
 const limit = 5
 let offset = 0;
 
@@ -28,19 +28,30 @@ function converterHtml(pokem)
          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="${pokem.name}">
       </div>
     </li>
-    */
+
+
+<a href=”./mostrapoke.html” target=”_blank”>${pokem.name}</a>
+
+window.location.href = "/index.html";
+
+
+    /*<span class="name">${pokem.name}</span>*/
+
     return `
     <li class="pokemon ${pokem.type}">
     <span class="number">#${pokem.number}</span>
-    <span class="name">${pokem.name}</span>
+
+    <button id="mostrarPokemon" class="name escolhe" type="button">
+       <a href='mostrapoke.html?numero=${pokem.number}&nome=${pokem.name}&foto=${pokem.photo}&tipos=${pokem.types}' target=”_blank”>${pokem.name}</a>
+    </button>
 
     <div class="detail">
         <ol class="types">
             ${pokem.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
         </ol>
 
-        <img src="${pokem.photo}"
-             alt="${pokem.name}">
+        <img src="${pokem.photo}" alt="${pokem.name}">
+
     </div>
     </li>
     `
@@ -58,6 +69,7 @@ loadPokemonItens(offset, limit)
 
 
 loadMoreButton.addEventListener('click', () => {
+    //alert('mais e mais')
     offset += limit
     const qtdRecordsWithNexPage = offset + limit
 
@@ -72,11 +84,8 @@ loadMoreButton.addEventListener('click', () => {
 })
 
 
-//<ol id="listadePokemons" class="pokemons"></ol>
-
-
+//<ol id="listadePokemons" class="pokemons"></ol> pagina html
 //listapokems.innerHTML += '<li>teste</li>'
-
 // agora nao usamos, pois a api separada em outro arquivo poke-api.js
 //fetch(url)
 //.then((response) => response.json())

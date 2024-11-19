@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap');
+
+* {
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+    background-color: #fff;
+  }
+
+  p {
+    color: white;
+  }
+
+  h1 {
+    color: #000;
+    font-size: 3em;
+    margin-top: 5px;
+  }
+
+  h2 {
+    font-size: 32px; 
+    color: #d81e3d;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .banner {
+    background-color: #d6cd1f;
+    /* define cor de fundo */
+    text-align: center;
+    padding-top: 30px; /* ajuste do inicio do top */
+    padding-bottom: 30px;
+    /* o padding-top Ã© um espaÃ§o extra acima do topo do banner,
+    e o height Ã© a altura do banner */
+    border-bottom: 15px solid #33A8DB;
+  }
+
+.principal{
+  background-color: #e79c11;
+  padding: 20px;
+  text-align: center;
+}
+
+.principal .number{
+  color:black;
+  opacity: 0.3;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.principal .name{
+  color:#000;
+  font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-transform: capitalize;
+}
+
+.principal .types{
+  background-color: cadetblue;
+  text-align: center;
+  color: #00008b;
+  padding: 0.25rem .5rem;
+  font-size: 4rem;
+  margin: 0.25rem 0;
+  border-radius: 1rem;
+  filter: brightness(1.1);    
+}
+
+.principal img{
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+  .banner .logo img{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .banner .logo {
+    background-color: rgba(0, 0, 0, .2);
+    height: 100px;
+    width: 268px;
+    margin: auto;
+    border-radius: 50%;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+
+  .banner p{
+    font-size: 20px; /*1.25rem;*/
+   
+  }
+
+
+  .banner h1{
+    font-size: 40px; /*2.5rem;*/
+    font-weight: 900; /*largura de cada letra da fonte*/
+    text-transform: uppercase; /* maiusculo */
+    color: transparent;/* a fonte assume a cor gradiente */
+    background: -webkit-linear-gradient(#33A8DB, #b74214);
+    /*background-clip: text;*/
+    -webkit-background-clip: text;
+  }
+
+  .principal button {
+    color: #1220df;
+    font-size: 16px; /*1rem;*/
+    font-weight: bold;
+    padding: 16px 32px;/* altura  e largura do botao */
+    text-transform: uppercase; /* tudo maisculo*/
+    letter-spacing: 4px;
+    background-color: transparent;  /*fundo transparente botao*/
+    border-image: linear-gradient(#c83bcd, #1572B7);
+    border-image-slice: 10;
+    border-radius: 30px;
+  }
+
+  .principal .escolhe:focus{
+    color:#7979ec;
+    background-color: #090f0f;
+}
+
+
+/*  configuracao da footer  */
+footer {
+  padding: 20px 0;
+  text-align: center;
+  background-image: linear-gradient(rgba(7, 17, 7, 0), rgba(11, 5, 41, 0.733));
+  border-top: 5px solid #105be780;
+}
+
+footer .dio-logo {
+  width: 300px;
+}
+
+footer a {
+  color: #33A8DB;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer p{
+    font-weight: 300; /* grosura das letras*/
+    font-size: 30px; /*2.5rem;*/
+    color:#252525;
+}
