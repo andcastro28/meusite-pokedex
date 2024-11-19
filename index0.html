@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POKEDEX</title>
+<style>
+    h1{
+        color:blue;
+        font-size: 24px;
+        text-align: center;
+    }
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body>
+    <!--  para funcionar o site 
+       instalou mais uma biblioteca do node.js
+    digitou esse comando no terminal
+       npm install -g http-server<enter>
+        no terminal chama o servidor de paginas
+        http-server .cmd<enter>
+
+    -->
+    <h1>site POKEDEX</h1>
+    <p>
+        Meu primeiro site desse tipo
+    </p>
+
+    <button id="btn" type="button">
+        Teste
+    </button>
+
+
+    <script>
+        // adicionando um evento ao botão
+        //document.getElementById('btn').addEventListener('click', function() {
+        //    alert('Botão clicado!');
+        //});
+
+        const vebotao=document.getElementById('btn')
+        console.log(vebotao)
+
+        vebotao.addEventListener('click', function () {
+            console.log("click no botao")
+        })
+
+    </script>
+
+</body>
+</html>
