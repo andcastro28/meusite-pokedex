@@ -4,6 +4,13 @@
    const xnom = params.get('nome');
    const xfot = params.get('foto');
    const xtipos = params.get('tipos');
+   let primeiroTipo=xtipos;
+
+
+   if(xtipos.indexOf(',')!=-1)
+      primeiroTipo=xtipos.substring(0,xtipos.indexOf(','));
+   
+    console.log(primeiroTipo);
 
    const areadiv = document.getElementById('teladomeio')
 
@@ -17,12 +24,14 @@
 
    function mostranatela(){
     return `
-    <div class="number">#${xnum}</div>
-    <div class="name"> ${xnom} </div>
-    <div class="types">${xtipos} </div>
-    <div>
-    <img src=${xfot} alt="${xnom}">
-    </div>
+    <div class="cor ${primeiroTipo}">
+         <div class="number">#${xnum}</div>
+         <div class="name"> ${xnom} </div>
+         <div class="types">${xtipos} </div>
+         <div>
+         <img src=${xfot} alt="${xnom}">
+         </div>
+     </div>    
     <button>Fechar</button>
     `
    }
