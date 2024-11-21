@@ -6,6 +6,14 @@
     list-style: none;
 }
 
+
+.logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+}
+
 @media screen and (min-width: 380px) {
     .pokemons{
        grid-template-columns: 1fr 1fr;

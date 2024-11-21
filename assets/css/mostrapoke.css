@@ -44,6 +44,7 @@ body {
   background-color: #e79c11;
   padding: 20px;
   text-align: center;
+  border-radius: 5rem;
 }
 
 .principal .number{
@@ -51,6 +52,8 @@ body {
   opacity: 0.3;
   text-align: center;
   font-size: 2rem;
+  border-radius: 5rem;
+  height: 40%;
 }
 
 .principal .name{
@@ -61,6 +64,8 @@ body {
   font-size: 2rem;
   margin-bottom: 1.5rem;
   text-transform: capitalize;
+  border-radius: 5rem;
+  height: 40%;
 }
 
 .principal .types{
@@ -98,6 +103,10 @@ body {
     margin-bottom: 16px;
   }
 
+  .cor{
+    border-radius: 60%;
+  }
+
   .banner p{
     font-size: 20px; /*1.25rem;*/
    
@@ -114,7 +123,7 @@ body {
     -webkit-background-clip: text;
   }
 
-  .principal button {
+  .principal button{
     color: #1220df;
     font-size: 16px; /*1rem;*/
     font-weight: bold;
@@ -122,7 +131,7 @@ body {
     text-transform: uppercase; /* tudo maisculo*/
     letter-spacing: 4px;
     background-color: transparent;  /*fundo transparente botao*/
-    border-image: linear-gradient(#c83bcd, #1572B7);
+    /*border-image: linear-gradient(#c83bcd, #1572B7);*/
     border-image-slice: 10;
     border-radius: 30px;
   }

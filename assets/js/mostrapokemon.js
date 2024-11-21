@@ -29,10 +29,10 @@
          <div class="name"> ${xnom} </div>
          <div class="types">${xtipos} </div>
          <div>
-         <img src=${xfot} alt="${xnom}">
+               <img src=${xfot} alt="${xnom}">
          </div>
+         <button>Fechar</button>
      </div>    
-    <button>Fechar</button>
     `
    }
    
